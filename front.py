@@ -1,4 +1,4 @@
-!pip install tensorflow
+pip install tensorflow
 import tensorflow.keras.applications
 #import tensorflow.keras
 import numpy as np
