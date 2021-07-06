@@ -1,6 +1,5 @@
-pip install tensorflow
-import tensorflow.keras.applications
-#import tensorflow.keras
+
+import tensorflow.keras
 import numpy as np
 
 
