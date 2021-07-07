@@ -22,7 +22,7 @@ st.title("Analizador de frescor do pescado")
 
 # component to upload images
 #img = st.file_uploader("Carregue uma imagem", type=["jpg", "png"])
-img = st.sidebar.file_uploader(
+img = st.file_uploader(
     "Carregue uma imagem ou tire uma foto", type=["jpg", "jpeg", "png"])
 if img:
     image = Image.open(img)
