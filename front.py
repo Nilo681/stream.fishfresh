@@ -8,9 +8,16 @@ from PIL import Image ,ImageOps
 
 import streamlit as st
 
+st.set_page_config(
+    page_title="Image Classification App",
+    page_icon="🐟",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 st.title("Analizador de frescor do pescado")
 
-st.sidebar.subheader("Input")
+#st.sidebar.subheader("Input")
 
 #model = ['/stream.fishfresh/model/keras_model.h5']
 
