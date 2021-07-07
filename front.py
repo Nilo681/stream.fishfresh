@@ -25,7 +25,7 @@ img = st.file_uploader("Carregue uma imagem", type=["jpg", "png"])
 if img:
     image = Image.open(img)
     #st.image(image)
-    #st.text(type(image))
+    st.text(type(image))
 
     ######## modelo##########
 
