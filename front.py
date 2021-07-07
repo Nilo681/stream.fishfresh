@@ -21,7 +21,9 @@ st.title("Analizador de frescor do pescado")
 #model = ['/stream.fishfresh/model/keras_model.h5']
 
 # component to upload images
-img = st.file_uploader("Carregue uma imagem", type=["jpg", "png"])
+#img = st.file_uploader("Carregue uma imagem", type=["jpg", "png"])
+img = st.sidebar.file_uploader(
+    "Carregue uma imagem ou tire uma foto", type=["jpg", "jpeg", "png"]
 if img:
     image = Image.open(img)
     #st.image(image)
