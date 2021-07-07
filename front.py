@@ -12,7 +12,7 @@ st.title("Analizador de frescor do pescado")
 
 st.sidebar.subheader("Input")
 
-model = ['/keras_model.h5']
+model = ['keras_model.h5']
 
 # component to upload images
 img = st.file_uploader("upload image", type=["jpg", "png"])
