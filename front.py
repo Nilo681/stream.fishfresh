@@ -13,8 +13,8 @@ st.set_page_config(
     layout="wide",
     #initial_sidebar_state="expanded",
 )
-
-st.title("Analizador de frescor do pescado")
+st.image('/stream.fishfresh/top.png')
+#st.title("Analizador de frescor do pescado")
 
 #st.sidebar.subheader("Input")
 
