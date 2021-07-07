@@ -25,7 +25,7 @@ img = st.file_uploader("Carregue uma imagem", type=["jpg", "png"])
 if img:
     image = Image.open(img)
     #st.image(image)
-    st.text(type(image))
+    #st.text(type(image))
 
     ######## modelo##########
 
@@ -48,7 +48,7 @@ if img:
     size = (224, 224)
     image = ImageOps.fit(image, size, Image.ANTIALIAS)
     st.image(image)
-    st.text(type(image))
+    #st.text(type(image))
     #turn the image into a numpy array
     image_array = np.asarray(image)
     # display the resized image
