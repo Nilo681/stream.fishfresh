@@ -67,6 +67,7 @@ if img:
     maior = np.argmax(prediction)
 
     predicted_class = classes[maior]
-    st.text('Seu pescado está a ',predicted_class, 'no gelo')
+    logging.info('Seu Peixe está a 
+    st.text(Seu peixe está a('predicted_class'))
     print(predicted_class)
     #return predicted_class
