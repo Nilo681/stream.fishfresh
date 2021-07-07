@@ -2,7 +2,6 @@
 import tensorflow.keras
 import numpy as np
 
-
 from streamlit.elements.image import image_to_url
 from PIL import Image ,ImageOps
 
@@ -12,7 +11,7 @@ st.set_page_config(
     page_title="Image Classification App",
     page_icon="🐟",
     layout="wide",
-    initial_sidebar_state="expanded",
+    #initial_sidebar_state="expanded",
 )
 
 st.title("Analizador de frescor do pescado")
@@ -22,7 +21,7 @@ st.title("Analizador de frescor do pescado")
 #model = ['/stream.fishfresh/model/keras_model.h5']
 
 # component to upload images
-img = st.file_uploader("upload image", type=["jpg", "png"])
+img = st.file_uploader(type=["jpg", "png"])
 if img:
     image = Image.open(img)
     #st.image(image)
@@ -68,6 +67,6 @@ if img:
     maior = np.argmax(prediction)
 
     predicted_class = classes[maior]
-    st.text(predicted_class)
+    st.text('Seu pescado está a ',predicted_class, 'no gelo')
     print(predicted_class)
     #return predicted_class
