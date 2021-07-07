@@ -13,8 +13,8 @@ st.set_page_config(
     layout="wide",
     #initial_sidebar_state="expanded",
 )
-st.image('top.png')
-#st.title("Analizador de frescor do pescado")
+#st.image('top.png')
+st.title("Analizador de frescor do pescado")
 
 #st.sidebar.subheader("Input")
 
