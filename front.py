@@ -12,7 +12,7 @@ st.title("Analizador de frescor do pescado")
 
 st.sidebar.subheader("Input")
 
-model = ['/stream.fishfresh/model/keras_model.h5']
+#model = ['/stream.fishfresh/model/keras_model.h5']
 
 # component to upload images
 img = st.file_uploader("upload image", type=["jpg", "png"])
@@ -26,7 +26,7 @@ if img:
     np.set_printoptions(suppress=True)
 
     # Load the model
-    model = tensorflow.keras.models.load_model('model')
+    model = tensorflow.keras.models.load_model('/stream.fishfresh/model/keras_model.h5')
     # Create the array of the right shape to feed into the keras model
     # The 'length' or number of images you can put into the array is
     # determined by the first position in the shape tuple, in this case 1.
