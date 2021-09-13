@@ -14,7 +14,7 @@ st.set_page_config(
     #initial_sidebar_state="expanded",
 )
 #st.image('top.png')
-st.title("Analizador de frescor do pescado")
+st.title("Analizador de frescor do peixe")
 
 #st.sidebar.subheader("Input")
 
