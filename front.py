@@ -25,7 +25,8 @@ st.title("Analizador de frescor do pescado")
 img = st.file_uploader(
     "Carregue uma imagem ou tire uma foto", type=["jpg", "jpeg", "png"])
 if img:
-    image = Image.open(img)
+    image1 = Image.open(img)
+    image = Image1.new("RGB", im.size, (255,255,255))
     #st.image(image)
     #st.text(type(image))
 
