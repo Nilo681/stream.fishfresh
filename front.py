@@ -81,13 +81,12 @@ if img:
 
     
     
-    st.text("Desenvolvido por laboratorio TECAAP")
-    
-    st.markdown('''
-    <a href="https://www.instagram.com/lab.tecaap/">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" />
-    </a>''',
-    unsafe_allow_html=True
+st.text("Desenvolvido por laboratorio TECAAP")
+st.markdown('''
+<a href="https://www.instagram.com/lab.tecaap/">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"="250" ="400"/>
+</a>''',
+unsafe_allow_html=True
 )
     
     
