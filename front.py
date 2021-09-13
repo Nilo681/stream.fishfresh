@@ -68,7 +68,7 @@ if img:
 
     maior = np.argmax(prediction)
 
-    st.text(("""
+    st.text("""
 <style>
 .big-font {
     font-size:300px !important;
