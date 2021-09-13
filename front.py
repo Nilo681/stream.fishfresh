@@ -112,4 +112,10 @@ st.markdown('')
 st.markdown('')
 st.markdown('')
 st.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=32 height=32>](https://www.instagram.com/lab.tecaap/) <small>Desenvolvido por laboratorio TECAAP.</small>'''.format(img_to_bytes("instagram.png")), unsafe_allow_html=True)    
-st.markdown('''TECAAP 2021''')    
+st.markdown('''TECAAP 2021''')   
+
+
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
