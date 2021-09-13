@@ -17,9 +17,11 @@ st.set_page_config(
 st.title("Analizador de frescor do peixe")
 
 st.subheader("O objetivo desta aplicação é avaliar o frescor do peixe a quanto tempo ele foi capturado e está no gelo")
-st.sidebar.subheader('1-clique em browser file e escolha a foto ou tire uma foto.')
-st.sidebar.subheader('2-aguarde a mensagem de sucesso')
-st.sidebar.subheader('3-veja a quantos dias o seu peixo foi capturado.')
+st.subheader('1-clique em browser file e escolha a foto ou tire uma foto.')
+st.subheader('2-aguarde a mensagem de sucesso')
+st.subheader('3-veja a quantos dias o seu peixo foi capturado.')
+
+#st.sidebar.subheader('EXEMPLOOOOOOOOOOO') Exemplo de side bar, basta descomentar
 
 #model = ['/stream.fishfresh/model/keras_model.h5']
 
