@@ -64,14 +64,17 @@ if img:
     # Load the image into the array
     data[0] = normalized_image_array
 
-    classes = ['Dia-1','Dia-2','Dia-3','Dia-4','Dia-6','Dia-7','Dia-8','Dia-9']# run the inference
+    classes = ['1','2','3','4','6','7','8','9']# run the inference
     prediction = model.predict(data)
 
 
     maior = np.argmax(prediction)
     predicted_class = classes[maior]
+    if predicted_class == '1':
+            st.markdown(predicted_class)
+            print('Este peixe foi capturado à',predicted_class,'Dia')
     
-    st.markdown(predicted_class)
-    
-    print(predicted_class)
+    else:
+        st.markdown(predicted_class)
+        print('Este peixe foi capturado à',predicted_class,'Dias')
     #return predicted_class
