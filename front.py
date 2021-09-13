@@ -71,6 +71,5 @@ if img:
 
     maior = np.argmax(prediction)
     predicted_class = classes[maior]
-    st.markdown(predicted_class)
     print(predicted_class)
     #return predicted_class
