@@ -7,6 +7,9 @@ from PIL import Image ,ImageOps
 
 import streamlit as st
 
+from pathlib import Path
+import base64
+
 st.set_page_config(
     page_title="Image Classification App",
     page_icon="🐟",
