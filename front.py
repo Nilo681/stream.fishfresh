@@ -68,8 +68,12 @@ if img:
 
     maior = np.argmax(prediction)
 
-    predicted_class = classes[maior]
-    new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">New image</p>'
-    st.text(predicted_class,new_title  )
+    st.text(("""
+<style>
+.big-font {
+    font-size:300px !important;
+}
+</style>
+"""predicted_class)
     print(predicted_class)
     #return predicted_class
