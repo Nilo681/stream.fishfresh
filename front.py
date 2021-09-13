@@ -89,7 +89,7 @@ if img:
     #return predicted_class
 
     
-st.sidebar.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=32 height=32>](https://www.instagram.com/lab.tecaap/) <small>Desenvolvido por laboratorio TECAAP 2021</small>'''.format(img_to_bytes("instagram.png")), unsafe_allow_html=True)    
+st.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=32 height=32>](https://www.instagram.com/lab.tecaap/) <small>Desenvolvido por laboratorio TECAAP 2021</small>'''.format(img_to_bytes("instagram.png")), unsafe_allow_html=True)    
 
 st.text("Desenvolvido por laboratorio TECAAP")
 st.markdown('''
