@@ -13,6 +13,12 @@ st.set_page_config(
     layout="wide",
     #initial_sidebar_state="expanded",
 )
+
+def img_to_bytes(img_path):
+    img_bytes = Path(img_path).read_bytes()
+    encoded = base64.b64encode(img_bytes).decode()
+    return encoded
+
 #st.image('top.png')
 st.title("Analizador de frescor do peixe")
 st.subheader("O objetivo desta aplicação é avaliar a quanto tempo ele foi capturado e está no gelo")
