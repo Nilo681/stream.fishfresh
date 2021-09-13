@@ -64,17 +64,13 @@ if img:
     # Load the image into the array
     data[0] = normalized_image_array
 
-    classes = ['1','2','3','4','6','7','8','9']# run the inference
+    #classes = ['1','2','3','4','6','7','8','9']# run the inference
+    classes  = ['Este peixe foi capturado à 1 Dia','Este peixe foi capturado à 2 Dia','Este peixe foi capturado à 3 Dia','Este peixe foi capturado à 4 Dia','Este peixe foi capturado à 6 Dia','Este peixe foi capturado à 7 Dia','Este peixe foi capturado à 8 Dia','Este peixe foi capturado à 9 Dia']
     prediction = model.predict(data)
 
 
     maior = np.argmax(prediction)
     predicted_class = classes[maior]
-    if predicted_class == '1':
-            st.markdown(predicted_class)
-            print('Este peixe foi capturado à',predicted_class,'Dia')
-    
-    else:
-        st.markdown(predicted_class)
-        print('Este peixe foi capturado à',predicted_class,'Dias')
+    st.markdown(predicted_class)
+    print(predicted_class)
     #return predicted_class
