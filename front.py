@@ -78,7 +78,14 @@ if img:
     data[0] = normalized_image_array
 
     #classes = ['1','2','3','4','6','7','8','9']# run the inference
-    classes  = ['Este peixe foi capturado à 1 Dia','Este peixe foi capturado à 2 Dia','Este peixe foi capturado à 3 Dia','Este peixe foi capturado à 4 Dia','Este peixe foi capturado à 6 Dia','Este peixe foi capturado à 7 Dia','Este peixe foi capturado à 8 Dia','Este peixe foi capturado à 9 Dia']
+    classes  = ['Este peixe foi capturado à 1 Dia.',
+                'Este peixe foi capturado à 2 Dias.',
+                'Este peixe foi capturado à 3 Dias.',
+                'Este peixe foi capturado à 4 Dias.',
+                'Este peixe foi capturado à 6 Dias.',
+                'Este peixe foi capturado à 7 Dias.',
+                'Este peixe foi capturado à 8 Dias.',
+                'Este peixe foi capturado à 9 Dias.']
     prediction = model.predict(data)
 
 
