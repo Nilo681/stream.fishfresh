@@ -69,13 +69,7 @@ if img:
     maior = np.argmax(prediction)
     predicted_class = classes[maior]
     
-    st.text("""
-    <style>
-    .big-font {
-    font-size:300px !important;
-    }
-    </style>
-    """,predicted_class)
+    st.text(font-size: 42px, predicted_class)
     
     print(predicted_class)
     #return predicted_class
