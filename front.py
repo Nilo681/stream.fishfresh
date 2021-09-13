@@ -74,6 +74,6 @@ if img:
     font-size:300px !important;
 }
 </style>
-"""predicted_class)
+""",predicted_class)
     print(predicted_class)
     #return predicted_class
