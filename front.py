@@ -23,11 +23,13 @@ def img_to_bytes(img_path):
     return encoded
 
 #st.image('top.png')
-st.title("Analizador de frescor do peixe")
-st.subheader("O objetivo desta aplicação é avaliar a quanto tempo ele foi capturado e está no gelo")
-st.subheader('1-clique em browser file e escolha a foto ou tire uma foto.')
-st.subheader('2-aguarde a mensagem de sucesso')
-st.subheader('3-veja a quantos dias o seu peixo foi capturado.')
+st.title("Analisador de frescor de peixes")
+st.subheader("Com apenas 1 foto conseguimos avaliar à quanto tempo um peixe foi capturado.")
+st.subheader("Nossa Inteligência Artificial faz a avaliação, e você garante um peixe fresco pra sua casa😎")
+st.subheader('Lembrando que nosso sistema foi desenvolvido para peixes inteiros refrigerados.')
+st.subheader('Basta clicar em Browse files e tirar ou carregar sua imagem!.')
+#st.subheader('2-aguarde a mensagem de sucesso')
+#st.subheader('3-veja a quantos dias o seu peixo foi capturado.')
 
 #st.sidebar.subheader('EXEMPLOOOOOOOOOOO') Exemplo de side bar, basta descomentar
 
@@ -87,7 +89,6 @@ if img:
                 'Este peixe foi capturado à 8 Dias.',
                 'Este peixe foi capturado à 9 Dias.']
     prediction = model.predict(data)
-
 
     maior = np.argmax(prediction)
     predicted_class = classes[maior]
