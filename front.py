@@ -100,5 +100,6 @@ st.markdown('')
 st.markdown('')
 st.markdown('')
 st.markdown('''[<img src='data:image/png;base64,{}' class='img-fluid' width=32 height=32>](https://www.instagram.com/lab.tecaap/) <small>Powered by llaboratory TECAAP.</small>'''.format(img_to_bytes("instagram.png")), unsafe_allow_html=True)    
+st.markdown('''Esta aplicação está em sua fase Beta e passando por testes.''')
 st.markdown('''TECAAP 2021''')   
 
